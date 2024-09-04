@@ -6,7 +6,13 @@ public class Main {
     }
 
     public static int maks(int[] tabell) {
-        return tabell[tabell.length-1];
+        int maksInt = tabell[0];
+        for (int i = 1; i < tabell.length; i++) {
+            if (tabell[i] > maksInt) {
+                maksInt = tabell[i];
+            }
+        }
+        return maksInt;
     }
 
     public static int min(int[] tabell) {
