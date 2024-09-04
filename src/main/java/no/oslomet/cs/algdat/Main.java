@@ -6,6 +6,12 @@ public class Main {
     }
 
     public static int maks(int[] tabell) {
-        return tabell[tabell.length-1];
+        int maks = tabell[0];
+        for (int i = 1; i < tabell.maks; i++) {
+            if (tabell[i] > maks) {
+                maks = tabell[i];
+            }
+        }
+        return maks;
     }
 }
