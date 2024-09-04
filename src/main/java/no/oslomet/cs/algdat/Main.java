@@ -16,6 +16,12 @@ public class Main {
     }
 
     public static int min(int[] tabell) {
-        return tabell[0];
+        int minInt = tabell[0];
+        for (int i = 1; i < tabell.length; i++) {
+            if (tabell[i] < minInt) {
+                minInt = tabell[i];
+            }
+        }
+        return minInt;
     }
 }
