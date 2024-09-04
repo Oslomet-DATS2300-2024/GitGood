@@ -16,10 +16,12 @@ public class Main {
     }
 
     public static int min(int[] tabell) {
-        int[] tabellminus = tabell.clone();
-        for (int i = 0; i < tabell.length; i++) {
-            tabellminus[i] = -tabell[i];
+        int minInt = tabell[0];
+        for (int i = 1; i < tabell.length; i++) {
+            if (tabell[i] < minInt) {
+                minInt = tabell[i];
+            }
         }
-        return -maks(tabellminus);
+        return minInt;
     }
 }
